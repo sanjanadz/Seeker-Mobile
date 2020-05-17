@@ -52,6 +52,15 @@
             android:layout_marginLeft="25dp"
             android:textSize="22sp"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Your Phone Number"
+            android:textColor="@color/main"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="22sp"
+            />
 
         <EditText
             android:layout_width="match_parent"

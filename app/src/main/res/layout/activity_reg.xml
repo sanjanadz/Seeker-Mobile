@@ -67,18 +67,7 @@
             android:inputType="number"
 
             />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/shape2"
-            android:padding="15dp"
-            android:inputType="number"
 
-            />
 
         <Button
             android:layout_width="wrap_content"

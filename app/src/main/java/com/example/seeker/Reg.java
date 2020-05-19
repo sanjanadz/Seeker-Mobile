@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Reg extends AppCompatActivity {
 
@@ -58,9 +61,9 @@ public class Reg extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-//        if(FirebaseAuth.getInstance().getCurrentUser() !=null){
-//            Intent intent = new Intent( MainActivity.this, Profile.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//            startActivity(intent);        }
+        if(FirebaseAuth.getInstance().getCurrentUser() !=null){
+            Intent intent = new Intent( Reg.this, MainInterface.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);        }
         }
 }

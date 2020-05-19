@@ -44,13 +44,23 @@
             android:layout_height="wrap_content"
             android:text="confirmation number"
             android:textColor="@color/main"
-
             android:layout_marginLeft="25dp"
             android:textSize="22sp"
             />
 
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
 
         <EditText
+            android:id="@+id/confirmText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -81,11 +91,11 @@
                 android:background="@drawable/button"
                 />
             <Button
+                android:id="@+id/buttonConfirm"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="CONFIRM"
-
                 android:layout_marginTop="20dp"
                 android:textColor="#ffffff"
                 android:textStyle="bold"

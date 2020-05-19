@@ -55,26 +55,36 @@
             />
 
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/shape2"
-            android:padding="15dp"
-            android:inputType="number"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+            <Spinner
+                android:id="@+id/spinnerCountries"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                />
 
-            />
+            <EditText
+                android:id="@+id/textphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:background="@drawable/shape2"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+        </LinearLayout>
 
 
         <Button
+            android:id="@+id/buttonsubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SUBMIT"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:textColor="#ffffff"
             android:textStyle="bold"

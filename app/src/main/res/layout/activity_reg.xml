@@ -74,6 +74,8 @@
                 android:background="@drawable/shape2"
                 android:padding="15dp"
                 android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="9"
                 />
         </LinearLayout>
 
